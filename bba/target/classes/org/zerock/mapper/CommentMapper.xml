@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="org.zerock.mapper.CommentMapper">
+  	<!-- 답글 입력 -->
+  	<insert id="insert">
+  		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
+			select max(bno)+1 bno from bba_comment
+		</selectKey>
+  	
+  		insert into bba_comment(bno, comment, commenter)
+  		values(#{bno},#{comment},#{commenter})
+  	</insert>
+  	<!-- 답글 상세 -->
+  	<select id="show" resultType="org.zerock.domain.CommentVO">
+  		select * from bba_comment where bno=#{bno}
+  	</select>
+  	<!-- 답글 삭제 -->
+  	<delete id="delete">
+  		delete from bba_comment where cno=#{cno}
+  	</delete>
+  	<!-- 답글 수정 -->
+  	<update id="update">
+  		update bba_comment
+		set comment=#{comment},
+			comUpdateDate=now()
+		where cno=#{cno}
+  	</update>
+  </mapper>

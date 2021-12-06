@@ -1,0 +1,207 @@
+@charset "utf-8";
+.container_in{
+    width: 1860px;
+    /* height: 100vh; */
+    margin: 0 auto;
+    padding: 10px 15px 0 10px;
+    box-sizing: border-box;
+    /* background-color: thistle; */
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+.con_left{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    padding: 50px 0;
+    /* background-color: tomato; */
+}
+.con_top{
+    display: flex;
+}
+.con_top button{
+    
+    margin: 10px 0 10px 758px;
+    background-color: transparent;
+    border: 1px solid #777;
+}
+.con_top button a{
+	padding: 0 30px;
+	color: #333;
+}
+.tabs_nav{
+    display: flex;
+    margin-bottom: 10px;
+}
+.tabs_nav li{
+    width: 120px;
+    height: 44px;
+    /* border: 1px solid #777; */
+    border-bottom: 0;
+    box-sizing: border-box;
+    /* background-color: #ddd; */
+}
+.tabs_nav li:last-child{
+    border-left: 0;
+}
+.tabs_nav a{
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    padding: 10px 25px 10px 20px;
+    box-sizing: border-box;
+}
+.tabs_nav .nav_notice::after, .tabs_nav .nav_qna::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(3, 107, 192);
+    position: absolute;
+    bottom: 0;
+    top: 57px;
+    margin-left: 7px
+}
+
+.b_top{
+    display: flex;
+    line-height: 40px;
+    border: 1px solid #777;
+    border-left: 0;
+    border-right: 0;
+}
+.notice .topLine_title, .qna .topLine_title{
+    font-weight: 700;
+    padding-left: 20px;
+    width: 70%;
+}
+.notice .topLine_writer, .qna .topLine_writer{
+    font-weight: 700;
+    width: 15%;
+}
+.notice .topLine_date, .qna .topLine_date{
+    font-weight: 700;
+    width: 15%;
+}
+.qna .topLine_title{
+    width: 60%;
+}
+.qna .topLine_hit{
+    font-weight: 700;
+    width: 10%;
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    line-height: 45px;
+}
+.title{
+    display: block;
+    padding-left: 20px;
+    width: 70%;
+}
+.writer, .qna .writer{
+    width: 15%;
+}
+.date, .qna .date{
+    width: 15%;
+}
+.qna .title{
+    width: 60%;
+}
+.qna .hit{
+    width: 10%;
+    text-align: center;
+}
+
+.qna_box{
+    display: none;
+}
+.text{
+    padding: 20px 40px;
+    background-color: #eee;
+}
+.text a{
+	color: #333;
+}
+.user_q{
+	display: flex;
+    justify-content: space-between;
+}
+.root_a{
+    padding: 20px 60px;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.item_pager{
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    display: flex;
+}
+.item_pager p{
+    margin-left: 20px;
+}
+.item_pager p a{
+    color: #333;
+    font-size: 15px;
+}
+.con_right{
+    width: 40%;
+    height: 700px;
+    /* background-color: violet; */
+}
+form{
+    width: 300px;
+    /* height: 300px; */
+    margin: 105px auto 0 auto;
+}
+form select{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.search_box{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.search_box .src_keyword{
+    width: 240px;
+}
+.search_box .src_btn{
+    width: 50px;
+}
+.search_box p input{
+    width: 100%;
+    height: 40px;
+    border: 0;
+}
+.search_box .src_keyword input{
+    border-bottom: 1px solid #333;
+}
+.search_box .src_btn input{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #333;
+    height: 100%;
+}

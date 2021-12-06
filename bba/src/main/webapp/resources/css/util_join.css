@@ -1,0 +1,91 @@
+@charset "utf-8";
+#header{display: none;}
+
+#container, #footer, #joinLogo{
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 460px;
+}
+#container{margin-bottom: 70px;}
+#join_logo .j_logo{
+    display: block;
+    width: 400px;
+    height: 100px;
+    background-image: url(../img/logo_thin_full.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 50px 0 30px 0;
+}
+input{
+    border: 0;
+}
+.content{
+    padding: 0 18px;
+}
+.con_row{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+.join_title{
+    margin-bottom: 5px;
+}
+.id_box{
+    display: flex;
+    justify-content: space-between;
+}
+.uInput{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 25px;
+    line-height: 40px;
+    border-bottom: 1px solid #555;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.id_left{
+    width: 80%;
+}
+.id_right{
+    width: 18%;
+}
+.id_right .btn{
+    height: 40px;
+    width: 100%;
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid #555;
+}
+.choice{
+    color: #777; 
+    font-size: 12px;
+}
+.btn_area{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.join_btn{width: 80%;}
+.cancel_btn{width: 18%;}
+.btn_area .btn{width: 100%; height: 40px;}
+.btn:hover{cursor: pointer;}
+
+#footer{
+    width: 100%; 
+    padding-left: 30px;
+}
+.f_menu{
+    display: flex;
+    margin-bottom: 5px;
+}
+.f_menu li{margin-right: 10px;}
+.f_menu li a, .f_info{
+    color: #777;
+}
+.f_menu .fm1 a{color: #333;}
+
